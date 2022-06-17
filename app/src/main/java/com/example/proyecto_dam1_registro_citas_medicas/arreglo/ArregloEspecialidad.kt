@@ -1,8 +1,6 @@
 package com.example.proyecto_dam1_registro_citas_medicas.arreglo
 
-import android.content.ContentValues
-import com.example.proyecto_dam1_registro_citas_medicas.clase.Especialidad
-import com.example.proyecto_dam1_registro_citas_medicas.util.AppConfig
+import com.example.proyecto_dam1_registro_citas_medicas.entidad.Especialidad
 
 class ArregloEspecialidad {
 

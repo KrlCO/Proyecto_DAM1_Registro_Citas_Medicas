@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.proyecto_dam1_registro_citas_medicas.adapter.EspecialidadAdapter
 import com.example.proyecto_dam1_registro_citas_medicas.arreglo.ArregloEspecialidad
-import com.example.proyecto_dam1_registro_citas_medicas.clase.Especialidad
 
 class MainActivity : AppCompatActivity() {
 

@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.proyecto_dam1_registro_citas_medicas.R
-import com.example.proyecto_dam1_registro_citas_medicas.clase.Especialidad
+import com.example.proyecto_dam1_registro_citas_medicas.entidad.Especialidad
 
 class EspecialidadAdapter(val info: ArrayList<Especialidad>):RecyclerView.Adapter<VistaEspecialidad>() {
 
