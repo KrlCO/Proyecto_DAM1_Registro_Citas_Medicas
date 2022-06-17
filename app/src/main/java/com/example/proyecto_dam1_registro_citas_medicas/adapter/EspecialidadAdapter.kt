@@ -11,8 +11,8 @@ class EspecialidadAdapter(val info: ArrayList<Especialidad>):RecyclerView.Adapte
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VistaEspecialidad {
 
         //inflar activity "item_especialidad"
-        var view = LayoutInflater.from(parent.context).inflate(R.layout.item_especialidad, parent, false)
-        return VistaEspecialidad(view)
+        val vista = LayoutInflater.from(parent.context).inflate(R.layout.item_especialidad, parent, false )
+        return VistaEspecialidad(vista)
     }
 
     override fun onBindViewHolder(holder: VistaEspecialidad, position: Int) {

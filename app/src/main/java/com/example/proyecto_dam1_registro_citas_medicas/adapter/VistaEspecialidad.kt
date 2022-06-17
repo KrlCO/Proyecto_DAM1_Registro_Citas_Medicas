@@ -18,6 +18,8 @@ class VistaEspecialidad(itemView: View): RecyclerView.ViewHolder(itemView) {
 
     //Block for init
     init {
+
+        //references attributes with controls form activity  "item_especialidad"
         tvCodigo = itemView.findViewById(R.id.tvCodigo)
         tvNombre = itemView.findViewById(R.id.tvNombre)
         tvDesc = itemView.findViewById(R.id.tvDesc)

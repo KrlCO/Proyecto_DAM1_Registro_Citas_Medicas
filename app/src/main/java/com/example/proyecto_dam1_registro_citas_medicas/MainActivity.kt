@@ -11,8 +11,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var rvEspecialidad: RecyclerView
 
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -26,12 +24,12 @@ class MainActivity : AppCompatActivity() {
         var lista = obj.listado()
 
         //create adaptador
-        var adaptador = EspecialidadAdapter(lista)
+        val adaptador = EspecialidadAdapter(lista)
 
         //estyle for RecyclerView
         rvEspecialidad.layoutManager = LinearLayoutManager(this)
 
         //send the adapter to obj "rvEspecialidad"
-        rvEspecialidad.adapter
+        rvEspecialidad.adapter = adaptador
     }
 }

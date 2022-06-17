@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/carlo/AndroidStudioProjects/Proyecto_DAM1_Registro_Citas_Medicas/app/src/main/res/layout/activity_main.xml" value="0.14130434782608695" />
-        <entry key="..\:/Users/carlo/AndroidStudioProjects/Proyecto_DAM1_Registro_Citas_Medicas/app/src/main/res/layout/item_especialidad.xml" value="0.22" />
+        <entry key="..\:/Users/carlo/AndroidStudioProjects/Proyecto_DAM1_Registro_Citas_Medicas/app/src/main/res/layout/activity_especialidad.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/carlo/AndroidStudioProjects/Proyecto_DAM1_Registro_Citas_Medicas/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/carlo/AndroidStudioProjects/Proyecto_DAM1_Registro_Citas_Medicas/app/src/main/res/layout/item_especialidad.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/carlo/AndroidStudioProjects/Proyecto_DAM1_Registro_Citas_Medicas/app/src/main/res/layout/item_medico.xml" value="0.14130434782608695" />
       </map>
     </option>
   </component>
