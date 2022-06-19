@@ -5,18 +5,21 @@ import android.content.Context
 import android.os.Build
 import com.example.proyecto_dam1_registro_citas_medicas.data.InitDB
 
-class AppConfig: Application() {
+class appConfig: Application() {
 
     companion object{
-        lateinit var CONTEXT : Context
-        lateinit var BD: InitDB
-        val BASE = "Consultas_Medicas.db"
+
+        val DB = "consultas_medicas.db"
         val VERSION = 1
+        lateinit var CONTEXT : Context
+        lateinit var BASE: InitDB
     }
 
     override fun onCreate() {
         super.onCreate()
+
+        //Creando obj CONTEXT
         CONTEXT = applicationContext
-        BD = InitDB()
+        BASE = InitDB()
     }
 }

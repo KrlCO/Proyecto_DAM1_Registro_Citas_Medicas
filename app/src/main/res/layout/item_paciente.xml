@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -50,18 +55,6 @@
             android:text="TextView" />
 
         <TextView
-            android:id="@+id/textView24"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="DNI:" />
-
-        <TextView
-            android:id="@+id/tvDniP"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
-
-        <TextView
             android:id="@+id/textView26"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -81,42 +74,6 @@
 
         <TextView
             android:id="@+id/tvSexP"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView30"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Telefono:" />
-
-        <TextView
-            android:id="@+id/tvFonoP"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView32"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Correo:" />
-
-        <TextView
-            android:id="@+id/tvMailP"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView34"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Contraseña:" />
-
-        <TextView
-            android:id="@+id/tvPassP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView" />

@@ -2,12 +2,12 @@ package com.example.proyecto_dam1_registro_citas_medicas.arreglo
 
 import android.content.ContentValues
 import com.example.proyecto_dam1_registro_citas_medicas.entidad.Medico
-import com.example.proyecto_dam1_registro_citas_medicas.util.AppConfig
+import com.example.proyecto_dam1_registro_citas_medicas.util.appConfig
 
 class ArregloMedico {
     fun listado(): ArrayList<Medico>{
         var data = ArrayList<Medico>()
-        var base = AppConfig.BD.readableDatabase
+        var base = appConfig.BASE.readableDatabase
         var sql = "select * from tb_medicos"
         var rs = base.rawQuery(sql, null)
         while (rs.moveToNext()){
@@ -21,7 +21,7 @@ class ArregloMedico {
 
     fun adicionar(bean: Medico): Int{
         var salida: Int = -1
-        var base = AppConfig.BD.writableDatabase
+        var base = appConfig.BASE.writableDatabase
         var claves = ContentValues()
         claves.put("medi_nombre", bean.nombre)
         claves.put("medi_apellido", bean.apellido)

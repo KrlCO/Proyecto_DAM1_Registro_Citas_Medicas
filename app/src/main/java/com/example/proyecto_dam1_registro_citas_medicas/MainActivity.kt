@@ -1,5 +1,6 @@
 package com.example.proyecto_dam1_registro_citas_medicas
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -42,5 +43,8 @@ class MainActivity : AppCompatActivity() {
         //send the adapter to obj "rvEspecialidad"
         rvEspecialidad.adapter = adaptador
         rvPaciente.adapter = adaptadorp
+
+        /*val intent = Intent(this, ActualizarActivity::class.java)
+        startActivity(intent)*/
     }
 }

@@ -6,7 +6,7 @@ import java.util.*
 class Paciente(var codigo: Int, var nombre:String,
                var apellidos:String, var dni: String,
                var edad: Int, var sexo: String,
-               var tlf: Int, var mail: String,
-               var clave: String)
+               var tlf: String, var mail: String,
+               var clave: String){
 
 }
