@@ -11,12 +11,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="LISTA DE CITAS" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Codigo:" />
+            android:text="Codigo de Cita:" />
 
         <TextView
             android:id="@+id/tvCodC"
@@ -28,7 +23,7 @@
             android:id="@+id/textView27"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Especialidad" />
+            android:text="Codigo Especialidad:" />
 
         <TextView
             android:id="@+id/tvEspC"
@@ -40,7 +35,7 @@
             android:id="@+id/textView32"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Medico:" />
+            android:text="Codigo de Medico:" />
 
         <TextView
             android:id="@+id/tvMedicoC"
@@ -49,23 +44,13 @@
             android:text="TextView" />
 
         <TextView
+            android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nombres:" />
+            android:text="Codigo Paciente:" />
 
         <TextView
-            android:id="@+id/tvNomC"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Apellidos:" />
-
-        <TextView
-            android:id="@+id/tvApeC"
+            android:id="@+id/tvCodPC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView" />

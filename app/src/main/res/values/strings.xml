@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Proyecto_DAM1_Registro_Citas_Medicas</string>
+    <string-array name="sexos">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
 </resources>

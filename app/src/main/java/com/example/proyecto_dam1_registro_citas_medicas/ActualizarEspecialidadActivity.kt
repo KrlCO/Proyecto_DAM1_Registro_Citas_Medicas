@@ -10,11 +10,6 @@ import com.example.proyecto_dam1_registro_citas_medicas.adapter.VistaPaciente
 import com.example.proyecto_dam1_registro_citas_medicas.arreglo.ArregloEspecialidad
 import com.example.proyecto_dam1_registro_citas_medicas.arreglo.ArregloPaciente
 
-class ActualizarActivity : AppCompatActivity() {
+class ActualizarEspecialidadActivity {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.actualizar_paciente)
-
-    }
 }

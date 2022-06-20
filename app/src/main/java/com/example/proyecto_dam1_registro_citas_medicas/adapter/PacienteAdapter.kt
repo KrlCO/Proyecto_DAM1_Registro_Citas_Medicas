@@ -6,9 +6,9 @@ import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.example.proyecto_dam1_registro_citas_medicas.ActualizarActivity
+import com.example.proyecto_dam1_registro_citas_medicas.ActualizarPacienteActivity
 import com.example.proyecto_dam1_registro_citas_medicas.R
 import com.example.proyecto_dam1_registro_citas_medicas.entidad.Paciente
 
@@ -72,9 +72,11 @@ class PacienteAdapter(val info: ArrayList<Paciente>): RecyclerView.Adapter<Vista
         //Asignando event OnClick for CarView
         holder.itemView.setOnClickListener{
 
-           Toast.makeText(context,"Todo bien",Toast.LENGTH_LONG).show()
-            //val intent = Intent(context, ActualizarActivity:: class.java)
-            //startActivity(intent)
+          // Toast.makeText(context,"Todo bien",Toast.LENGTH_LONG).show()
+            val intent = Intent(context, ActualizarPacienteActivity:: class.java)
+            //Create clave to Almacenar obj from class Paciente
+            intent.putExtra("bean", info.get(position))
+            ContextCompat.startActivity(context,intent, null)
         }
 
     }

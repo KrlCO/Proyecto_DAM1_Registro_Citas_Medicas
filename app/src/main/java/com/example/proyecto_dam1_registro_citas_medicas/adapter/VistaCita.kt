@@ -11,16 +11,15 @@ class VistaCita(itemView: View):RecyclerView.ViewHolder(itemView) {
     var tvCodC: TextView
     var tvEspc: TextView
     var tvMedicoC: TextView
-    var tvNomC: TextView
-    var tvApeC: TextView
+    var tvCodPC: TextView
     var btnDetalleC:Button
 
     init {
         tvCodC = itemView.findViewById(R.id.tvCodC)
         tvEspc = itemView.findViewById(R.id.tvEspC)
         tvMedicoC = itemView.findViewById(R.id.tvMedicoC)
-        tvNomC = itemView.findViewById(R.id.tvNomC)
-        tvApeC = itemView.findViewById(R.id.tvApeC)
+        tvCodPC = itemView.findViewById(R.id.tvCodPC)
+
 
         btnDetalleC = itemView.findViewById(R.id.btnDetalleC)
     }

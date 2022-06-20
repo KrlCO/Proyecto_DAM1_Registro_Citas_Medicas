@@ -26,7 +26,7 @@
             android:id="@+id/textView24"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Especialidad:" />
+            android:text="Codigo Especialidad:" />
 
         <TextView
             android:id="@+id/tvEspCD"
@@ -38,7 +38,7 @@
             android:id="@+id/textView34"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Medico:" />
+            android:text="Codigo Medico:" />
 
         <TextView
             android:id="@+id/tvMedicoCD"
@@ -47,24 +47,13 @@
             android:text="TextView" />
 
         <TextView
+            android:id="@+id/textView21"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nombre Paciente:" />
+            android:text="Codigo Paciente:" />
 
         <TextView
-            android:id="@+id/tvNomCD"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
-
-        <TextView
-            android:id="@+id/textView41"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Apellidos  Paciente:" />
-
-        <TextView
-            android:id="@+id/tvApeCD"
+            android:id="@+id/tvCodPCD"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView" />

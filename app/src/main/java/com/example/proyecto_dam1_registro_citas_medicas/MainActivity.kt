@@ -3,6 +3,8 @@ package com.example.proyecto_dam1_registro_citas_medicas
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.proyecto_dam1_registro_citas_medicas.adapter.CitaAdapter
@@ -13,11 +15,12 @@ import com.example.proyecto_dam1_registro_citas_medicas.arreglo.ArregloCita
 import com.example.proyecto_dam1_registro_citas_medicas.arreglo.ArregloEspecialidad
 import com.example.proyecto_dam1_registro_citas_medicas.arreglo.ArregloPaciente
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var rvEspecialidad: RecyclerView
-    private  lateinit var  rvPaciente: RecyclerView
+    private lateinit var  rvPaciente: RecyclerView
     private lateinit var rvCita: RecyclerView
+    private lateinit var btnNewPa: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +29,10 @@ class MainActivity : AppCompatActivity() {
         rvEspecialidad = findViewById(R.id.rvEspecialidad)
         rvPaciente = findViewById(R.id.rvPaciente)
         rvCita = findViewById(R.id.rvCita)
+        btnNewPa = findViewById(R.id.btnNewPa)
+
+        //
+        btnNewPa.setOnClickListener(this)
 
 
         //Create obj from class ArregloEspecialidad
@@ -55,5 +62,13 @@ class MainActivity : AppCompatActivity() {
 
         /*val intent = Intent(this, ActualizarActivity::class.java)
         startActivity(intent)*/
+    }
+
+    override fun onClick(v: View?) {
+
+        val intent = Intent(this, RegristarPacienteActivity::class.java)
+
+        startActivity(intent)
+
     }
 }

@@ -1,5 +1,6 @@
 package com.example.proyecto_dam1_registro_citas_medicas.arreglo
 
+import android.content.ContentValues
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import com.example.proyecto_dam1_registro_citas_medicas.entidad.Paciente
@@ -34,4 +35,58 @@ class ArregloPaciente{
         return data
 
     }
+
+    //method for add Paciente
+    fun addPaciente(bean:Paciente): Int{
+        var salida: Int = -1
+
+        //Into the BD in mode write
+        val base:SQLiteDatabase = appConfig.BASE.writableDatabase
+
+        //Create obj class ContentValues
+        val filas = ContentValues()
+
+        //add claves
+        filas.put("Nombre", bean.nombre)
+        filas.put("Apellido", bean.apellidos)
+        filas.put("DNI", bean.dni)
+        filas.put("Edad ", bean.edad)
+        filas.put("Sexo", bean.sexo)
+        filas.put("Telefono", bean.tlf)
+        filas.put("Correo", bean.mail)
+        filas.put("Clave", bean.clave)
+        salida=base.insert("tb_paciente","IdPaciente", filas).toInt()
+
+
+        return salida
+    }
+
+    //method for Update Paciente
+    fun updatePaciente(bean:Paciente): Int{
+        var salida: Int = -1
+
+        //Into the BD in mode write
+        val base:SQLiteDatabase = appConfig.BASE.writableDatabase
+
+        //Create obj class ContentValues
+        val filas = ContentValues()
+
+        //add claves
+        filas.put("Nombre", bean.nombre)
+        filas.put("Apellido", bean.apellidos)
+        filas.put("DNI", bean.dni)
+        filas.put("Edad ", bean.edad)
+        filas.put("Sexo", bean.sexo)
+        filas.put("Telefono", bean.tlf)
+        filas.put("Correo", bean.mail)
+        filas.put("Clave", bean.clave)
+        salida=base.update("tb_paciente",filas,"IdPaciente=?", arrayOf(bean.codigo.toString()))
+
+        return salida
+    }
+
+
+
+
+
 }
