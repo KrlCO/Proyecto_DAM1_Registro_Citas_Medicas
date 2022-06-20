@@ -9,7 +9,7 @@ class appConfig: Application() {
 
     companion object{
 
-        val DB = "consultas_medicas.db"
+        val BD = "citas_medicas.db"
         val VERSION = 1
         lateinit var CONTEXT : Context
         lateinit var BASE: InitDB

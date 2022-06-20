@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    app:cardCornerRadius="10dp">
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,31 +9,41 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ESPECIALIDADES" />
+            android:text="LISTA DE CITAS" />
 
         <TextView
-            android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Codigo:" />
 
         <TextView
-            android:id="@+id/tvCodigo"
+            android:id="@+id/tvCodC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/textView27"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Especialidad:" />
+            android:text="Especialidad" />
 
         <TextView
-            android:id="@+id/tvNombre"
+            android:id="@+id/tvEspC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medico:" />
+
+        <TextView
+            android:id="@+id/tvMedicoC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="TextView" />
@@ -44,18 +51,29 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Descripción:" />
+            android:text="Nombres:" />
 
         <TextView
-            android:id="@+id/tvDesc"
+            android:id="@+id/tvNomC"
             android:layout_width="match_parent"
-            android:layout_height="94dp"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apellidos:" />
+
+        <TextView
+            android:id="@+id/tvApeC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="TextView" />
 
         <Button
-            android:id="@+id/btnDetalle"
+            android:id="@+id/btnDetalleC"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Detalle" />
+            android:text="Detalles" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
