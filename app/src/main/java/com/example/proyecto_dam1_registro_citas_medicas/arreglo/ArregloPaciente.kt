@@ -85,6 +85,18 @@ class ArregloPaciente{
         return salida
     }
 
+    //Method for Delete
+    fun deletePaciente(cod: Int): Int{
+        var salida: Int = -1
+
+        val base: SQLiteDatabase = appConfig.BASE.writableDatabase
+        salida = base.delete("tb_paciente","IdPaciente=?", arrayOf(cod.toString()))
+
+
+
+        return salida
+    }
+
 
 
 

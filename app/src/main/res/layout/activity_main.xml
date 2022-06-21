@@ -17,7 +17,7 @@
             android:id="@+id/btnNewPa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nuevo Paciente" />
+            android:text=" Registar Paciente" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -27,6 +27,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/btnNCita"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Registrar Cita" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rvCita"

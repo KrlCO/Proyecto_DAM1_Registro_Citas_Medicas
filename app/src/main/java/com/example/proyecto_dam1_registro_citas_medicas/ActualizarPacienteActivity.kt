@@ -1,12 +1,10 @@
 package com.example.proyecto_dam1_registro_citas_medicas
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Spinner
-import android.widget.TextView
+import android.widget.*
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.proyecto_dam1_registro_citas_medicas.adapter.EspecialidadAdapter
@@ -60,7 +58,48 @@ class ActualizarPacienteActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View?) {
 
+        if (v ===btnActualizarPA){
 
+            var cod = tvCodPA.text.toString().toInt()
+            var nam = edtNombrePA.text.toString()
+            var ape = edtApellidosPA.text.toString()
+            var dni = edtDniPA.text.toString()
+            var ed = edtEdadPA.text.toString().toInt()
+            var sx = spnSexoPA.selectedItem.toString()
+            var tlf = edtTelefonoPA.text.toString()
+            var mai = edtCorreoPA.text.toString()
+            var pas = edtPassPA.text.toString()
+
+            //Create obj to class Paciente and send to variables
+            var bean = Paciente(cod, nam, ape,dni, ed, sx, tlf, mai, pas)
+
+            //Invoke method addPaciente
+            var salida = ArregloPaciente().updatePaciente(bean)
+
+            //Validate output
+            if (salida > 0)
+                Toast.makeText(this, "Paciente Actualizados", Toast.LENGTH_SHORT).show()
+            else
+                Toast.makeText(this, "No se Actualizo Paciente", Toast.LENGTH_SHORT).show()
+
+        }else if (v === btnEliminarPA){
+
+            //Invoke method DELETE
+            var salida = ArregloPaciente().deletePaciente(tvCodPA.text.toString().toInt())
+
+            //Validate output
+            if (salida > 0)
+                Toast.makeText(this, "Paciente Borrado", Toast.LENGTH_SHORT).show()
+            else
+                Toast.makeText(this, "No se Borrar Paciente", Toast.LENGTH_SHORT).show()
+
+
+        }else if (v === btnRegresarAP){
+
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+
+        }
 
 
     }

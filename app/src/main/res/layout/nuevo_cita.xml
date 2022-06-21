@@ -6,124 +6,106 @@
 
     <LinearLayout
         android:layout_width="409dp"
-        android:layout_height="wrap_content"
+        android:layout_height="729dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteY="1dp">
 
         <TextView
-            android:id="@+id/textView30"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nombres:" />
+            android:text="Especialidad:" />
 
         <EditText
-            android:id="@+id/edtNombrePA"
+            android:id="@+id/edtEspCR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName" />
 
         <TextView
-            android:id="@+id/textView36"
+            android:id="@+id/textView51"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Apellidos:" />
+            android:text="Medico:" />
 
         <EditText
-            android:id="@+id/edtApellidosPA"
+            android:id="@+id/edtMedCR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName" />
 
         <TextView
-            android:id="@+id/textView38"
+            android:id="@+id/textView52"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="DNI:" />
+            android:text="Paciente:" />
 
         <EditText
-            android:id="@+id/edtDniPA"
+            android:id="@+id/edtPacienteCR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName" />
 
         <TextView
-            android:id="@+id/textView40"
+            android:id="@+id/textView53"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Edad:" />
+            android:text="Fecha:" />
 
         <EditText
-            android:id="@+id/edtEdadPA"
+            android:id="@+id/edtFechaCR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName" />
 
         <TextView
-            android:id="@+id/textView41"
+            android:id="@+id/textView54"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sexo:" />
-
-        <Spinner
-            android:id="@+id/spnSexoPA"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:entries="@array/sexos" />
-
-        <TextView
-            android:id="@+id/textView42"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Telefono:" />
+            android:text="Hora:" />
 
         <EditText
-            android:id="@+id/edtTelefonoPA"
+            android:id="@+id/edtHoraCR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName" />
 
         <TextView
-            android:id="@+id/textView44"
+            android:id="@+id/textView55"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Correo:" />
+            android:text="Descripción:" />
 
         <EditText
-            android:id="@+id/edtCorreoPA"
+            android:id="@+id/edtDescCR"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName" />
 
-        <TextView
-            android:id="@+id/textView46"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Clave:" />
+            android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/edtPassPA"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName" />
+            <Button
+                android:id="@+id/btnSaveCR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Guardar" />
 
-        <Button
-            android:id="@+id/btnActualizarPA"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Guardar" />
-
-        <Button
-            android:id="@+id/btnRegresarAP"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Regresar" />
+            <Button
+                android:id="@+id/btnBackCR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Volver" />
+        </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

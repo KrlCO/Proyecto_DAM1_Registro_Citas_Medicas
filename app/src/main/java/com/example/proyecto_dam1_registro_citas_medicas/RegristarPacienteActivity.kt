@@ -27,6 +27,7 @@ class RegristarPacienteActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.nuevo_paciente)
 
         edtNombreP = findViewById(R.id.edtNombrePA)

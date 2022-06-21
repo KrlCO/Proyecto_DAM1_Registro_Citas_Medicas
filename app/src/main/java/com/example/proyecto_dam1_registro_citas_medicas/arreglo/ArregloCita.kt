@@ -1,5 +1,6 @@
 package com.example.proyecto_dam1_registro_citas_medicas.arreglo
 
+import android.content.ContentValues
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import com.example.proyecto_dam1_registro_citas_medicas.entidad.Cita
@@ -33,6 +34,25 @@ class ArregloCita {
 
         }
         return data
+    }
+
+    fun addCita(bean:Cita): Int{
+        var salida: Int = -1
+
+        val base:SQLiteDatabase = appConfig.BASE.writableDatabase
+        val filas = ContentValues()
+
+        filas.put("IdEsp", bean.esp)
+        filas.put("IdMedico", bean.doctor)
+        filas.put("IdPaciente", bean.idpaciente)
+        filas.put("Fecha", bean.fecha)
+        filas.put("Hora", bean.hora)
+        filas.put("Descripcion",bean.descripcion)
+
+        salida = base.insert("tb_cita", "IdCita", filas).toInt()
+
+        return  salida
+
     }
 
 
