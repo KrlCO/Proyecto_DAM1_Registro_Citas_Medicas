@@ -84,8 +84,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         if(v == btnMedico){
-            val inten = Intent(this, MedicoActivity::class.java)
-            startActivity(inten)
+            val intn = Intent(this, MedicoActivity::class.java)
+            startActivity(intn)
         }
 
     }
