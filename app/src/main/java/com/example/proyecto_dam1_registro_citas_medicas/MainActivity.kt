@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var rvCita: RecyclerView
     private lateinit var btnNewPa: Button
     private lateinit var btnNCita: Button
+    private lateinit var btnMedico: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,11 +33,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         rvCita = findViewById(R.id.rvCita)
         btnNewPa = findViewById(R.id.btnNewPa)
         btnNCita = findViewById(R.id.btnNCita)
-
+        btnMedico = findViewById(R.id.btnMedico)
         //
         btnNewPa.setOnClickListener(this)
         btnNCita.setOnClickListener(this)
-
+        btnMedico.setOnClickListener(this)
 
         //Create obj from class ArregloEspecialidad
         var obj = ArregloEspecialidad()
@@ -69,17 +70,22 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View?) {
 
-        if (v == btnNewPa){
+        if (v == btnNewPa) {
 
             val intent = Intent(this, RegristarPacienteActivity::class.java)
             startActivity(intent)
 
         }
-        if(v == btnNCita) {
+        if (v == btnNCita) {
 
-            val inten = Intent(this,RegistrarCitaActivity::class.java)
+            val inten = Intent(this, RegistrarCitaActivity::class.java)
             startActivity(inten)
 
+        }
+
+        if(v == btnMedico){
+            val inten = Intent(this, MedicoActivity::class.java)
+            startActivity(inten)
         }
 
     }

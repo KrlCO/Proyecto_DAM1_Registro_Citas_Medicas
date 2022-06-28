@@ -69,14 +69,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="FECHA:" />
+            android:text="CID:" />
 
         <TextView
-            android:id="@+id/txtFecha"
+            android:id="@+id/txtCid"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="TextView" />
+
+        <Button
+            android:id="@+id/btnDetalleMedico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Detalle" />
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
