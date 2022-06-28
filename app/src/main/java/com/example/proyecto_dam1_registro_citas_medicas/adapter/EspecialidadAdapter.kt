@@ -20,7 +20,7 @@ class EspecialidadAdapter(val info: ArrayList<Especialidad>):RecyclerView.Adapte
     override fun onBindViewHolder(holder: VistaEspecialidad, position: Int) {
 
         //accessing class attributes VistaEspecialidad
-        holder.tvCodigo.text = info.get(position).codigo.toString()
+        holder.tvCodigo.text = info.get(position).id.toString()
         holder.tvNombre.text = info.get(position).nombre
         holder.tvDesc.text = info.get(position).descripcion
 

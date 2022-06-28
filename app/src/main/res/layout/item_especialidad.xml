@@ -24,10 +24,9 @@
             android:text="Codigo:" />
 
         <TextView
-            android:id="@+id/tvCodigo"
+            android:id="@+id/txtCodigoE"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:id="@+id/textView8"
@@ -36,10 +35,9 @@
             android:text="Especialidad:" />
 
         <TextView
-            android:id="@+id/tvNombre"
+            android:id="@+id/txtNombreE"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_height="wrap_content" />
 
         <TextView
             android:layout_width="match_parent"
@@ -47,13 +45,13 @@
             android:text="Descripción:" />
 
         <TextView
-            android:id="@+id/tvDesc"
+            android:id="@+id/txtDescE"
             android:layout_width="match_parent"
             android:layout_height="94dp"
             android:text="TextView" />
 
         <Button
-            android:id="@+id/btnDetalle"
+            android:id="@+id/btnDetalleE"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Detalle" />

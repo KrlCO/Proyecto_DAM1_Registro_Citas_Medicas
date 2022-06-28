@@ -20,6 +20,12 @@
             android:text="Medico" />
 
         <Button
+            android:id="@+id/btnEspecialidad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ESPECIALIDAD" />
+
+        <Button
             android:id="@+id/btnNewPa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

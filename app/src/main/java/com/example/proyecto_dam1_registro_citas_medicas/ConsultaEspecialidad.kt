@@ -1,11 +1,11 @@
 package com.example.proyecto_dam1_registro_citas_medicas
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 
-class EspecActivity : AppCompatActivity() {
+class ConsultaEspecialidad : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_especialidad)
     }
 }

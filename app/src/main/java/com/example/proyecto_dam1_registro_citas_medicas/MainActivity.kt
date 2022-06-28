@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var btnNewPa: Button
     private lateinit var btnNCita: Button
     private lateinit var btnMedico: Button
+    private lateinit var btnEspecialidad: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,33 +35,35 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         btnNewPa = findViewById(R.id.btnNewPa)
         btnNCita = findViewById(R.id.btnNCita)
         btnMedico = findViewById(R.id.btnMedico)
+        btnEspecialidad = findViewById(R.id.btnEspecialidad)
         //
         btnNewPa.setOnClickListener(this)
         btnNCita.setOnClickListener(this)
         btnMedico.setOnClickListener(this)
+        btnEspecialidad.setOnClickListener(this)
 
         //Create obj from class ArregloEspecialidad
-        var obj = ArregloEspecialidad()
+        //var obj = ArregloEspecialidad()
         var pa = ArregloPaciente()
         var ci = ArregloCita()
 
         //invoke the method Listado
-        var lista = obj.listado()
+        //var lista = obj.listado()
         var listap = pa.listado()
         var listadoc = ci.listado()
 
         //create adaptador
-        val adaptador = EspecialidadAdapter(lista)
+        //val adaptador = EspecialidadAdapter(lista)
         val adaptadorp = PacienteAdapter(listap)
         val adaptadorc = CitaAdapter(listadoc)
 
         //estyle for RecyclerView
-        rvEspecialidad.layoutManager = LinearLayoutManager(this)
+        //rvEspecialidad.layoutManager = LinearLayoutManager(this)
         rvPaciente.layoutManager = LinearLayoutManager(this)
         rvCita.layoutManager = LinearLayoutManager(this)
 
         //send the adapter to obj "rvEspecialidad"
-        rvEspecialidad.adapter = adaptador
+        //rvEspecialidad.adapter = adaptador
         rvPaciente.adapter = adaptadorp
         rvCita.adapter = adaptadorc
 
@@ -84,8 +87,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         if(v == btnMedico){
-            val intn = Intent(this, MedicoActivity::class.java)
-            startActivity(intn)
+            val inten = Intent(this, MedicoActivity::class.java)
+            startActivity(inten)
+        }
+
+        if(v == btnEspecialidad){
+            val inten = Intent(this, EspecialidadActivity::class.java)
+            startActivity(inten)
         }
 
     }
